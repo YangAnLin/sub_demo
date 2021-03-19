@@ -1,1 +1,1 @@
-dHJvamFuOi8vMTIzNDU2QGFpcnBvcnRzdGVjaC54eXo6NDQzP2FsbG93aW5zZWN1cmU9MCZzbmk9YWlycG9ydHN0ZWNoLnh5eiZtdXg9MCZ3cz0xJndzcGF0aD0vaGFwcHkvJndzaG9zdD1haXJwb3J0c3RlY2gueHl6Cg==
+trojan://123456@airportstech.xyz:443?allowinsecure=0&sni=airportstech.xyz&mux=0&ws=1&wspath=/happy/&wshost=airportstech.xyz
