@@ -1,1 +1,95 @@
-trojan://123456@airportstech.xyz:443?allowinsecure=0&sni=airportstech.xyz&mux=0&ws=1&wspath=/happy/&wshost=airportstech.xyz
+{
+    "dns": {
+        "servers": [
+            "1.1.1.1",
+            "8.8.8.8",
+            "8.8.4.4"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "127.0.0.1",
+            "port": 8889,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": true,
+                "timeout": 300
+            },
+            "sniffing": {
+            },
+            "tag": "http_IN"
+        },
+        {
+            "listen": "127.0.0.1",
+            "port": 1089,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "ip": "127.0.0.1",
+                "udp": true
+            },
+            "sniffing": {
+            },
+            "tag": "socks_IN"
+        }
+    ],
+    "log": {
+        "loglevel": "warning"
+    },
+    "outbounds": [
+        {
+            "protocol": "trojan-go",
+            "sendThrough": "0.0.0.0",
+            "settings": {
+                "encryption": "",
+                "host": "airportstech.xyz",
+                "mux": false,
+                "password": "123456",
+                "path": "/happy/",
+                "plugin": "",
+                "port": 443,
+                "server": "airportstech.xyz",
+                "sni": "airportstech.xyz",
+                "type": 1
+            },
+            "streamSettings": {
+            },
+            "tag": "PROXY"
+        },
+        {
+            "protocol": "freedom",
+            "sendThrough": "0.0.0.0",
+            "settings": {
+                "domainStrategy": "AsIs",
+                "redirect": ":0"
+            },
+            "streamSettings": {
+            },
+            "tag": "DIRECT"
+        },
+        {
+            "protocol": "blackhole",
+            "sendThrough": "0.0.0.0",
+            "settings": {
+                "response": {
+                    "type": "none"
+                }
+            },
+            "streamSettings": {
+            },
+            "tag": "BLACKHOLE"
+        }
+    ],
+    "routing": {
+        "domainStrategy": "AsIs",
+        "rules": [
+            {
+                "ip": [
+                    "geoip:private"
+                ],
+                "outboundTag": "DIRECT",
+                "type": "field"
+            }
+        ]
+    }
+}
