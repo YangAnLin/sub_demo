@@ -1,2 +1,1 @@
-trojan://123456@airportstech.xyz:443?allowinsecure=0&sni=airportstech.xyz&mux=0&ws=1&wspath=/happy/&wshost=airportstech.xyz
-trojan-go://123456@airportstech.xyz:443/?type=ws&sni=airportstech.xyz&host=airportstech.xyz&path=%2Fhappy%2F#trojan-go@149.248.15.200:0
+dHJvamFuOi8vMTIzNDU2QGFpcnBvcnRzdGVjaC54eXo6NDQzP2FsbG93aW5zZWN1cmU9MCZzbmk9YWlycG9ydHN0ZWNoLnh5eiZtdXg9MCZ3cz0xJndzcGF0aD0vaGFwcHkvJndzaG9zdD1haXJwb3J0c3RlY2gueHl6CnRyb2phbi1nbzovLzEyMzQ1NkBhaXJwb3J0c3RlY2gueHl6OjQ0My8/dHlwZT13cyZzbmk9YWlycG9ydHN0ZWNoLnh5eiZob3N0PWFpcnBvcnRzdGVjaC54eXomcGF0aD0lMkZoYXBweSUyRiN0cm9qYW4tZ29AMTQ5LjI0OC4xNS4yMDA6MA==
