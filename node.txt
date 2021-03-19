@@ -1,1 +1,1 @@
-trojan://123456@airportstech.xyz:443?allowinsecure=0&sni=airportstech.xyz&mux=1&ws=1&wspath=/happy/&wshost=airportstech.xyz
+trojan-go://123456@airportstech.xyz:443/?type=ws&sni=airportstech.xyz&host=airportstech.xyz&path=%2Fhappy%2F#trojan-go@airportstech.xyz:443
