@@ -1,1 +1,1 @@
-trojan://123456@airports.ink.xyz:443
+trojan://123456@airports.ink:443?allowinsecure=0&sni=airports.ink&mux=0&ws=0&wspath=&wshost=&ss=0&ssmethod=aes-128-gcm&sspasswd=&group=#airports.ink
